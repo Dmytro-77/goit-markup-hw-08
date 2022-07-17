@@ -158,10 +158,10 @@ body {
 }
 
 .scroll-first-title {
-  font-family: "Roboto";
-
-  font-size: 36px;
-  line-height: 1.17;
+  font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;  
   color: var(--first-title-color);
 }
 
