@@ -291,6 +291,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+
 .footer-tel:hover,
 .footer-tel:focus {
   color: var(--accent-color);
