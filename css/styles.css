@@ -180,9 +180,6 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-.hero .container {
-  max-width: 1200px;
-}
 
 .hero-title {
   font-weight: 900;
@@ -227,13 +224,6 @@ body {
 
 .section {
   padding: 94px 0;
-}
-
-.srroll .container {
-  display: flex;
-  flex-grow: 1;
-  max-width: 1200px;
-  text-align: start;
 }
 
 .scroll-title {
@@ -407,7 +397,7 @@ body {
 /* --FOOTER-- */
 
 .footer {
-  padding: 60px 0px;
+  padding: 60px 0;
   background-color: #2f303a;
 }
 
@@ -440,8 +430,6 @@ body {
   color: var(--basic-blu-color);
 }
 
-.footer-item {
-}
 .footer-link {
   font-size: 14px;
   line-height: 1.7;
