@@ -32,6 +32,8 @@ button {
 }
 img {
   display: block;
+  max-width: 100%;
+    height: auto;
 }
 
 body {
@@ -181,9 +183,21 @@ body {
 /* --HERO-- */
 
 .hero {
-  background: #2f303a;
+  /* background: #2f303a; */
   padding-top: 200px;
   padding-bottom: 200px;
+     
+}
+
+.person {
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)),
+   url(../img2/Hero\ foto.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   
 }
 
 .hero-title {
@@ -198,6 +212,7 @@ body {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 .hero-button {
@@ -283,10 +298,7 @@ body {
   right: auto;
 }
 
-img {
-  max-width: 100%;
-  right: auto;
-}
+
 
 /* --TEAM-- */
 
@@ -359,6 +371,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--third-title-color);
+  margin-bottom: 16px;
 }
 
 .team-title-porto {
@@ -396,6 +409,40 @@ img {
 .map {
   padding-top: 30px;
   padding-bottom: 30px;
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+/*--TEAM-AREA--*/
+
+.team-area-link {
+width: 44px;
+height: 44px;
+border-radius: 50%;
+background-color: var(--second-title-color);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.team-area-link:hover  {
+  background-color: var(--basic-blu-color);
+}
+
+.team-area-icon {
+  fill: #AFB1B8;;
+}
+
+
+
+.team-area-link:hover .team-area-icon {
+  fill: var(--first-btn-color);
+}
+
+.team-area {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 /* --FOOTER-- */
