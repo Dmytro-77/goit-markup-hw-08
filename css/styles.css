@@ -148,6 +148,10 @@ body {
   color: var(--basic-blu-color);
 }
 
+.header-tel {
+  margin-left: 50px;
+}
+
 .header-post-one {
   font-weight: 500;
   font-size: 14px;
@@ -167,7 +171,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--third-title-color);
-  margin-left: 50px;
 }
 
 .header-tel-one:hover,
@@ -235,7 +238,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--first-title-color);
-  margin: 10px;
+  margin-bottom: 10px;
 }
 
 .scroll-pre-title {
@@ -243,7 +246,6 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--third-title-color);
-  margin: 10px;
 }
 
 .scroll-list {
@@ -253,9 +255,6 @@ body {
 
 /*--connection--  */
 
-.section {
-  padding: 94px 0;
-}
 .work {
   padding-top: 0px;
 }
@@ -284,11 +283,12 @@ body {
   right: auto;
 }
 
-/* --TEAM-- */
-
-.section {
-  padding: 94px 0;
+img {
+  max-width: 100%;
+  right: auto;
 }
+
+/* --TEAM-- */
 
 .team {
   background: #f5f4fa;
@@ -379,10 +379,8 @@ body {
 }
 
 .table {
-  padding: 20px 24px 54px 24px;
-  border-right: 110px;
-  border-bottom: 370px;
-  border-left: 110px;
+  padding: 20px 24px 20px 24px;
+
   border: 1px solid #ececec;
   border-top: 0px;
 }
@@ -445,6 +443,14 @@ body {
   color: var(--second-title-color);
 }
 
+.footer-item {
+  margin-bottom: 9px;
+}
+
+.footer-post {
+  margin-bottom: 9px;
+}
+
 .footer-post-one {
   font-weight: 400;
   font-style: normal;
@@ -452,7 +458,6 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 9px;
 }
 
 .footer-post-one:hover,
@@ -469,7 +474,6 @@ body {
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 9px;
 }
 
 .footer-tel-one:hover,
