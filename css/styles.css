@@ -33,7 +33,7 @@ button {
 img {
   display: block;
   max-width: 100%;
-    height: auto;
+  height: auto;
 }
 
 body {
@@ -186,18 +186,17 @@ body {
   /* background: #2f303a; */
   padding-top: 200px;
   padding-bottom: 200px;
-     
 }
 
 .person {
   background-image: linear-gradient(
-    rgba(47, 48, 58, 0.4), 
-    rgba(47, 48, 58, 0.4)),
-   url(../img2/Hero\ foto.jpg);
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-   
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+  ),
+    url(../img2/Hero\ foto.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -212,7 +211,6 @@ body {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
-  
 }
 
 .hero-button {
@@ -246,6 +244,7 @@ body {
   padding: 94px 0;
 }
 
+
 .scroll-title {
   font-weight: 700;
   font-size: 14px;
@@ -266,6 +265,23 @@ body {
 .scroll-list {
   display: flex;
   gap: 30px;
+}
+
+/* --ICON-- */
+.scroll-sag {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  justify-content: center;
+    align-items: center;
+}
+
+.scroll-sag-icon {
+  
+  fill: #212121;
 }
 
 /*--connection--  */
@@ -297,8 +313,6 @@ body {
   max-width: 100%;
   right: auto;
 }
-
-
 
 /* --TEAM-- */
 
@@ -416,27 +430,26 @@ body {
 /*--TEAM-AREA--*/
 
 .team-area-link {
-width: 44px;
-height: 44px;
-border-radius: 50%;
-background-color: var(--second-title-color);
-display: flex;
-justify-content: center;
-align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--second-title-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.team-area-link:hover  {
+.team-area-link:hover {
   background-color: var(--basic-blu-color);
 }
 
 .team-area-icon {
-  fill: #AFB1B8;;
+  fill: #afb1b8;
 }
 
-
-
 .team-area-link:hover .team-area-icon {
-  fill: var(--first-btn-color);
+  border-color: var(--basic-blu-color);
+  fill: var(--second-title-color);
 }
 
 .team-area {
@@ -445,12 +458,66 @@ align-items: center;
   gap: 10px;
 }
 
+/* --FAMILY-- */
+
+.family .section {
+  background-color: var(--second-title-color);
+  display: flex;
+ 
+}
+
+.family-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+}
+
+.family-list {
+  display: flex;
+ width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  background-color: #F5F5F5;
+  justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.family-item {
+  font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+  
+    color: #212121;
+    margin-bottom: 50px;
+}
+
+.family-icon {
+  fill:#afb1b8;
+}
+
 /* --FOOTER-- */
 
 .footer {
   padding: 60px 0;
   background-color: #2f303a;
+  
 }
+
+
+.footer .container{
+ 
+    display: flex;
+    align-items: baseline;
+  }
+
 
 .contacts-address {
   font-weight: 400;
@@ -527,3 +594,68 @@ align-items: center;
 .footer-tel-one:focus {
   color: var(--basic-blu-color);
 }
+
+/* --FOOTER-AREA-- */
+
+.area {
+   
+  flex-direction: column;
+  align-items: baseline;
+  margin-left: 70px;
+}
+
+.area-pre-one {
+  font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.area-one {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+.area-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.area-link:hover {
+background-color: #2196f3;
+} 
+
+
+.area-icon {
+  fill: #ffffff;
+ 
+}
+
+.area-link:hover .area-icon {
+  background-color:#2196f3;
+  fill: var(--second-title-color);
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
