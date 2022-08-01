@@ -182,10 +182,11 @@ body {
 
 /* --HERO-- */
 
-.hero {
-  /* background: #2f303a; */
+.hero  {
+ 
   padding-top: 200px;
   padding-bottom: 200px;
+  
 }
 
 .person {
