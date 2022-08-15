@@ -26,8 +26,6 @@
   </head>
 
   <body>
-    
-
     <!-- HEADER -->
     <header class="header">
       <div class="container">
@@ -488,101 +486,115 @@
             </li>
           </ul>
         </div>
+        <div class="footer-right">
+          <h2 class="footer-lamber">Подпишитесь на рассылку</h2>
+          <form class="footer-form">
+            <input
+              class="footer-input"
+              type="email"
+              name="email"
+              id="name"
+              placeholder="E-mail"
+            />
+            <button class="footer-button" type="button">
+              Подпишитесь
+              <svg class="btn-icon" width="24" height="24">
+                <use href="./img2/spait.svg#telega"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
-
-     
-       
-      <form class="footer-form">
-         
-        <label for="name" class="footer-lamber">Підпишіться на розсилку</label>
-        <input class="footer-input" type="emil" name="email" id="name" placeholder="E-mail" />
-        <button class="footer-button" type="button">
-          Подпишитесь 
-          <svg class="btn-icon" width="24" height="24">
-            <use href="./img2/spait.svg"></use>
-          </svg>
-        </button>
-     
-      
     </footer>
+
     <!-- MODAL -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <svg class="icon-cross" width="18" height="18" data-modal-close>
           <use href="./img2/spait.svg#cross"></use>
         </svg>
-        
-
-        
 
         <form class="modal-form">
           <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-          
-          <div  class="modal-blok">
+
+          <div class="modal-blok">
             <label for="name-one" class="modal-label">Имя</label>
-              <div class="modal-icon-two">
-            <input type="text" class="modal-input" name="name" id="name-one"
-           placeholder="" autocomplete="off"/>
-            <svg class="icon-two" width="18" height="18">
+            <div class="modal-icon-two">
+              <input
+                type="text"
+                class="modal-input"
+                name="name"
+                id="name-one"
+                placeholder=""
+                autocomplete="off"
+              />
+              <svg class="icon-two" width="18" height="18">
                 <use href="./img2/spait.svg#modal-person"></use>
               </svg>
-              </div>
-           </div>
-          
-            
-         
+            </div>
+          </div>
+
           <div class="modal-blok">
-            
             <label for="name-tel" class="modal-label">Телефон</label>
             <div class="modal-icon-two">
-          <input type="tel" class="modal-input" name="name" id="name-tel" 
-          placeholder="" 
-          autocomplete="off"/>
-          <svg class="icon-two" width="18" height="18">
+              <input
+                type="tel"
+                class="modal-input"
+                name="name"
+                id="name-tel"
+                placeholder=""
+                autocomplete="off"
+              />
+              <svg class="icon-two" width="18" height="18">
                 <use href="./img2/spait.svg#modal-phone"></use>
               </svg>
-          </div>
+            </div>
           </div>
 
-          
           <div class="modal-blok">
             <label for="name-post" class="modal-label">Почта</label>
-          <div class="modal-icon-two">
-          <input type="email" class="modal-input" name="name" id="name-post"
-           placeholder="" autocomplete="off"/>
-            <svg class="icon-two" width="18" height="18">
-              <use href="./img2/spait.svg#modal-mail"></use>
-            </svg>
+            <div class="modal-icon-two">
+              <input
+                type="email"
+                class="modal-input"
+                name="name"
+                id="name-post"
+                placeholder=""
+                autocomplete="off"
+              />
+              <svg class="icon-two" width="18" height="18">
+                <use href="./img2/spait.svg#modal-mail"></use>
+              </svg>
+            </div>
           </div>
-                    
+
+          <div class="modal-blok">
+            <label for="comments" class="modal-label">Коментарий</label>
+            <textarea
+              class="modal-text"
+              name="comments"
+              id="comments"
+              rows="8"
+              placeholder="Введите текст"
+            ></textarea>
           </div>
-          
 
-         
-            
-         <div class="modal-blok">
-          
-          <label for="comments" class="modal-label">Коментарий</label>
-          <textarea class="modal-text" name="comments" 
-          id="comments" rows="8" 
-          placeholder="Введите текст"></textarea>
-         </div>
-
-          
           <div class="modal-check">
-           
-            <input type="checkbox" name="box" 
-            id="box" class="modal-box" 
-            value="true">
-           <label for="box" class="check-text">
-            Погоджуюся з розсилкою та приймаю Умови договору</label>
+            <input
+              type="checkbox"
+              name="box"
+              id="box"
+              class="modal-box"
+              value="true"
+            />
+            <label for="box" class="check-text">
+              Погоджуюся з розсилкою та приймаю
+              <span class="check-span">Умови договору</span>
+            </label>
           </div>
-          
-          
+
           <button class="modal-button" type="submit">Отправить</button>
         </form>
-
-
       </div>
     </div>
 
