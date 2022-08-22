@@ -2,27 +2,26 @@
     padding-top: 0px;
 }
 
-.connection-list {
+.section__list {
     display: flex;
     gap: 30px;
     margin-top: 50px;
 }
 
-.connection-title {
+.section__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--first-title-color);
+   
 }
 
 .connection>.container {
-    display: flex;
-    align-items: center;
+    @extend %lign-flex;
 }
 
-.connection-item {
+.section__item {
     max-width: 100%;
     right: auto;
 }
@@ -31,7 +30,7 @@
     position: relative;
 }
 
-.connection-pre {
+.signature {
     position: absolute;
     top: 316px;
     width: 370px;
@@ -40,7 +39,7 @@
     background: rgba(47, 48, 58, 0.8);
 }
 
-.connection-text {
+.signature__text {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;

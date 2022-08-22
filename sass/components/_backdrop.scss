@@ -49,7 +49,7 @@
 
 
 
-.icon-cross {
+.modal__cross {
     position: absolute;
     right: 8px;
     top: 8px;
@@ -67,11 +67,11 @@
 
 /* --FORM-- */
 
-.modal-form {
+.window {
     width: 448px;
 }
 
-.modal-title {
+.window__title {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -85,7 +85,7 @@
 
 
 
-.modal-blok {
+.line {
     margin-bottom: 10px;
     input {
             width: 100%;
@@ -110,15 +110,16 @@
         }
 }
 
-.modal-blok-coment {
+.modal__coment {
     margin-bottom: 20px;
 }
 
-.modal-icon-two {
+.icon {
     position: relative;
 }
 
-.modal-label {
+.line__label,
+.coment__label {
     top: 50%;
     left: 40px;
     display: flex;
@@ -130,7 +131,7 @@
     margin-bottom: 4px;
 }
 
-.icon-two {
+.icon__two {
     position: absolute;
     top: 50%;
     left: 10px;
@@ -145,7 +146,7 @@
 }
 
 
-.modal-text {
+.coment__text {
     resize: none;
     width: 100%;
     height: 120px;
@@ -171,7 +172,7 @@
 
 /* --checkbox-- */
 
-.check-text {
+.check__text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,20 +183,27 @@
     letter-spacing: 0.03em;
 
     color: #757575;
+    .check__box:checked + &::before {
+            background-color: #2196f3;
+            border: none;
+            background-image: url(../img2/check.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-origin: border-box; }
 }
 
-.modal-check {
+.modal__check {
     margin-bottom: 30px;
 }
 
-.check-span {
+.check__span {
     color: var(--basic-blu-color);
 
     margin-left: 4px;
     text-decoration: underline;
 }
 
-.check-text::before {
+.check__text::before {
     content: "";
     width: 16px;
     height: 15px;
@@ -204,18 +212,12 @@
     margin-right: 9px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        .modal-box:checked + &::before {
-                background-color: #2196f3;
-                border: none;
-                background-image: url(../img2/check.svg);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-origin: border-box;
-            }
+    
+       
 }
 
 
-.modal-box {
+.check__box {
     position: absolute;
     z-index: -1;
     opacity: 0;
@@ -244,7 +246,7 @@
     color: #2196f3;
     text-decoration: underline;
 }
-.modal-button {
+.square {
     cursor: pointer;
     font-weight: 700;
     font-size: 16px;

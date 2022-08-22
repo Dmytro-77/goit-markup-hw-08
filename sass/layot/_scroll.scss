@@ -2,30 +2,30 @@
     padding: 94px 0;
 }
 
-.scroll-title {
+.section__line {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--first-title-color);
+    
     margin-bottom: 10px;
 }
 
-.scroll-pre-title {
+.section__pre {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--third-title-color);
 }
 
-.scroll-list {
+.section__list {
     display: flex;
     gap: 30px;
 }
 
 /* --ICON-- */
-.scroll-sag {
+.frame {
     width: 270px;
     height: 120px;
     display: flex;
@@ -36,6 +36,6 @@
     align-items: center;
 }
 
-.scroll-sag-icon {
+.frame__icon {
     fill: #212121;
 }

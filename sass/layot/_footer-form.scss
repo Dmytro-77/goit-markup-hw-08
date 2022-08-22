@@ -1,12 +1,12 @@
-.footer-right {
+.footer__telegrams {
     margin-left: 93px;
 }
 
-.footer-form {
+.form {
     display: flex;
 }
 
-.footer-input {
+.form__input {
     width: 358px;
     height: 50px;
     padding-left: 16px;
@@ -18,9 +18,8 @@
     border-radius: 4px;
 }
 
-.footer-button {
-    display: flex;
-    align-items: center;
+.dot {
+    @extend %lign-flex;
     width: 200px;
     height: 50px;
     text-align: center;
@@ -29,25 +28,25 @@
     padding-left: 28px;
     letter-spacing: 0.06em;
     background-color: var(--basic-blu-color);
-    color: #ffffff;
+    
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
     gap: 10px;
 }
 
-.btn-icon {
+.dot__icon {
     fill: var(--first-title-color);
 }
 
-.footer-lamber {
+.telegrams__lamber {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    color: #ffffff;
+   
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
