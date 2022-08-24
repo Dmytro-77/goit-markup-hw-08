@@ -1,31 +1,31 @@
-.section {
-    padding: 94px 0;
-}
+.section__padding {
+ padding: 94px 0;
+    }
 
-.section__line {
+.feachers__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    
+    color: #212121;
     margin-bottom: 10px;
 }
 
-.section__pre {
+.feachers__text {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--third-title-color);
 }
 
-.section__list {
+.feachers {
     display: flex;
     gap: 30px;
 }
 
 /* --ICON-- */
-.frame {
+.feachers__box {
     width: 270px;
     height: 120px;
     display: flex;
@@ -36,6 +36,6 @@
     align-items: center;
 }
 
-.frame__icon {
+.feachers__icon {
     fill: #212121;
 }

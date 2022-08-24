@@ -1,8 +1,8 @@
-.work {
+.section__padding-top {
     padding-top: 0px;
 }
 
-.section__list {
+.work {
     display: flex;
     gap: 30px;
     margin-top: 50px;
@@ -14,14 +14,15 @@
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-   
+   color: #212121
 }
 
 .connection>.container {
     @extend %lign-flex;
+    
 }
 
-.section__item {
+.work__item {
     max-width: 100%;
     right: auto;
 }
@@ -30,7 +31,7 @@
     position: relative;
 }
 
-.signature {
+.work__box {
     position: absolute;
     top: 316px;
     width: 370px;
@@ -39,7 +40,7 @@
     background: rgba(47, 48, 58, 0.8);
 }
 
-.signature__text {
+.work__text {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;

@@ -1,5 +1,5 @@
 
-.backdrop {
+.backdrop__position {
     position: fixed;
     top: 0;
     left: 0;
@@ -18,7 +18,7 @@
 }
 
 
-.modal {
+.modal__position {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -67,11 +67,11 @@
 
 /* --FORM-- */
 
-.window {
+.form {
     width: 448px;
 }
 
-.window__title {
+.form__text {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -85,7 +85,7 @@
 
 
 
-.line {
+.form__box {
     margin-bottom: 10px;
     input {
             width: 100%;
@@ -110,7 +110,7 @@
         }
 }
 
-.modal__coment {
+.modal__coments {
     margin-bottom: 20px;
 }
 
@@ -118,18 +118,7 @@
     position: relative;
 }
 
-.line__label,
-.coment__label {
-    top: 50%;
-    left: 40px;
-    display: flex;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: #757575;
-    margin-bottom: 4px;
-}
+
 
 .icon__two {
     position: absolute;
@@ -145,8 +134,20 @@
         }
 }
 
+.form__label,
+.coments__label {
+    top: 50%;
+    left: 40px;
+    display: flex;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
+    margin-bottom: 4px;
+}
 
-.coment__text {
+.coments__text {
     resize: none;
     width: 100%;
     height: 120px;
@@ -172,7 +173,7 @@
 
 /* --checkbox-- */
 
-.check__text {
+.checkbox__text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,7 +184,7 @@
     letter-spacing: 0.03em;
 
     color: #757575;
-    .check__box:checked + &::before {
+    .checkbox__input:checked + &::before {
             background-color: #2196f3;
             border: none;
             background-image: url(../img2/check.svg);
@@ -192,18 +193,18 @@
             background-origin: border-box; }
 }
 
-.modal__check {
+.modal__checkbox {
     margin-bottom: 30px;
 }
 
-.check__span {
+.checkbox__span {
     color: var(--basic-blu-color);
 
     margin-left: 4px;
     text-decoration: underline;
 }
 
-.check__text::before {
+.checkbox__text::before {
     content: "";
     width: 16px;
     height: 15px;
@@ -217,7 +218,7 @@
 }
 
 
-.check__box {
+.checkbox__input {
     position: absolute;
     z-index: -1;
     opacity: 0;
@@ -246,7 +247,7 @@
     color: #2196f3;
     text-decoration: underline;
 }
-.square {
+.button__checkbox {
     cursor: pointer;
     font-weight: 700;
     font-size: 16px;

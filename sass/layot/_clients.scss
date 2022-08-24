@@ -1,22 +1,19 @@
-.family {
+.section__clients {
     padding-top: 94px;
     padding-bottom: 94px;
-    
-        
 }
-
-.family__item {
+.section__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-
+    color: #212121;
     
     margin-bottom: 50px;
 }
 
-.company {
+.clients__link {
     width: 170px;
     height: 92px;
     display: flex;
@@ -35,11 +32,11 @@
     }
 }
 
-.company__icon {
+.clients__icon {
     fill: currentColor;
 }
 
-.family__business {
+.clients__flex {
     display: flex;
     justify-content: center;
     gap: 30px;

@@ -1,24 +1,27 @@
 .header {
     background: var(--second-title-color);
     border-bottom: 1px solid #ececec;
-    .container {
+     .header__container{
             display: flex;
             align-items: center;
         }
 }
 
 .navigation__list,
-.message,
-.contact {
+.navigation__link,
+.contacts
+ {
     display: flex;
 }
 
-
-
-
-.navigation__title:not(:last-child) {
-    margin-right: 50px;
+.header__container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
+
 
  .header__logo {
     font-family: "Raleway";
@@ -26,7 +29,7 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-   
+   color: #212121;
     margin-right: 93px;
 }
 
@@ -39,10 +42,18 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--basic-blu-color);
+   
 }
 
-.message,
-.contact {
+
+.navigation__item:not(:last-child) {
+    margin-right: 50px;
+   } 
+
+
+
+.navigation__link,
+.contacts {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -59,38 +70,22 @@
 
 
 
-.message
+.navigation__link
  {
     padding-top: 32px;
     padding-bottom: 32px;
 }
 
-.studio {
-    position: relative;
-    color: var(--basic-blu-color);
-    &::after {
-            position: absolute;
-            content: "";
-            width: 100%;
-            height: 4px;
-            left: 0;
-            display: block;
-            bottom: -1px;
-            right: 0;
-            border-radius: 2px;
-            background-color: #2196f3;
-        }
-}
 
 
 
-.contact__tel {
+.contacts__item {
     margin-left: 50px;
 }
 
  
 
-.connection {
+.contacts__link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -107,7 +102,7 @@
 
 
 
-.connection__icon
+.contacts__icon
  {
     fill: currentColor;
     margin-right: 10px;
@@ -117,4 +112,22 @@
     &:focus {
             fill: currentColor;
         }
+}
+
+.navigation__link--studio {
+    position: relative;
+    color: var(--basic-blu-color);
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 4px;
+        left: 0;
+        display: block;
+        bottom: -1px;
+        right: 0;
+        border-radius: 2px;
+        background-color: #2196f3;
+    }
 }
