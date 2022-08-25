@@ -61,6 +61,15 @@ body {
   color: #212121;
 }
 
+.section__clients--top {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section__padding--top {
+  padding-top: 0px;
+}
+
 .visually__hidden {
   position: absolute;
   white-space: nowrap;
@@ -273,7 +282,7 @@ body {
   background-color: var(--basic-blu-color);
 }
 
-.section__padding {
+.section__padding--one {
   padding: 94px 0;
 }
 
@@ -321,10 +330,6 @@ body {
 
 .feachers__icon {
   fill: #212121;
-}
-
-.section__padding-top {
-  padding-top: 0px;
 }
 
 .work {
@@ -583,11 +588,6 @@ body {
 .cards__link:hover, .cards__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.section__clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .section__title {
