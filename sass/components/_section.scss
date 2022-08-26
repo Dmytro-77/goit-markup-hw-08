@@ -1,8 +1,25 @@
-.section__clients--top {
-    padding-top: 94px;
-    padding-bottom: 94px;
+.section {
+ padding-top: 94px; 
+ padding-bottom: 94px;  
 }
 
-.section__padding--top {
+.section--no-padding-top {
     padding-top: 0px;
 }
+
+.section--ader-background {
+    background: #f5f4fa;
+}
+
+
+.section__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+
+    margin-bottom: 50px;
+}
+
