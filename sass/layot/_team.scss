@@ -3,13 +3,34 @@
 
 .team {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
+    
+    
 }
 
 .team__item {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
+        @media screen and (min-width: 480px) {
+                max-width: 450px;
+            }
+        
+            @media screen and (min-width: 768px) {
+                max-width: 354px;
+            }
+        
+            @media screen and (min-width: 1200px) {
+                max-width: 270px;
+            }
+        @media screen and (min-width: 768px) {
+                width: calc((100% - 30px) / 2);
+            }
+        
+            @media screen and (min-width: 1200px) {
+                width: calc((100% - 90px) / 3);
+            }
 }
 
 .team__box {
@@ -17,6 +38,11 @@
     padding-bottom: 30px;
     border-radius: 4px;
     background: #ffffff;
+    @media screen and (min-width: 1200px) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    
 }
 
 .team__title {
@@ -26,6 +52,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--first-title-color);
+    margin-bottom: 30px;
 }
 
 .team__title {
@@ -50,13 +77,16 @@
     justify-content: center;
     align-items: center;
     color: #afb1b8;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
         background-color: var(--basic-blu-color);
         color: #ffffff;
-    }
+    
+        }
+
+    
 }
 
 
