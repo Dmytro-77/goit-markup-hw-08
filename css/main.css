@@ -332,6 +332,8 @@ body {
 .feachers {
   max-width: 100%;
   gap: 30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .feachers-item {
