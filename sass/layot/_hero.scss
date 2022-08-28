@@ -1,34 +1,50 @@
+.hero .container {
+    // display: flex;
+    padding: 0;
+    // @include mobile {
+    //     max-width: 100%;
+    // }
+    
+}
+
 .hero__person--padding {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 1600px;
-    height: 600px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    min-width: 480px;
+    
+    // max-width: 1600px;
+    // height: 600px;
     margin-left: auto;
     margin-right: auto;
+
     & {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../img2/Hero\ foto.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../img2/Hero\ foto.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 
 }
 
 
 .hero__title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
+    font-size: 26px;
+    line-height: 1.6;
+    // text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-   color: #ffff;
-    text-align: center;
-    width: 696px;
-    margin-left: auto;
-    margin-right: auto;
+    color: #ffff;
+    width: 360px;
+    margin-bottom: 30px;
+    // width: 696px;
+    margin-left: 60px;
+    margin-right: 60px;
+    // @include mobile {
+    //     min-width: 360px;
+    // }
 }
 
 .hero__button {
@@ -41,19 +57,22 @@
     letter-spacing: 0.06em;
     background-color: var(--accent-color);
     color: #ffff;
-    display: block;
-    margin-top: 30px;
+    // display: block;
+    
+    margin-left: 140px;
+    margin-right: 140px;
+    
     margin-left: auto;
     margin-right: auto;
-    width: 216px;
+    width: 200px;
     height: 50px;
     border: 0;
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        &:hover,
-        &:focus {
-                background-color: var(--basic-blu-color);
-            }
-}
 
+    &:hover,
+    &:focus {
+        background-color: var(--basic-blu-color);
+    }
+}
