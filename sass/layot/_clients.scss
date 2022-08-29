@@ -2,7 +2,7 @@
 
 
 .clients__link {
-    width: 170px;
+    width: 100%;
     height: 92px;
     display: flex;
     justify-content: center;
@@ -18,6 +18,9 @@
         border-color: 1px solid var(--basic-blu-color);
         color: #2196f3;
     }
+
+        
+        
 }
 
 .clients__icon {
@@ -25,7 +28,43 @@
 }
 
 .clients {
+    max-width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+    padding-top: 60px;
+        padding-bottom: 60px;
+        @include desktop  {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+               
+}
+
+.clients__item {
+    width: 100%;
+    justify-content: center;
+    
+@include table {
+        width: calc((100% - 30px) / 2);
+    }
+
+        @include desktop {
+        width: calc((100% - 150px) / 6);
+    }
+        @media screen and (min-width: 320px) {
+            max-width: 210px;
+        }
+                 @include mobile {
+             max-width: 210px;
+         }
+    
+                 @include table {
+             max-width: 226px;
+         }
+    
+                 @include desktop {
+             max-width: 170px;
+         }
 }
