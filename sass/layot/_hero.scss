@@ -1,22 +1,21 @@
-.hero .container {
-    // display: flex;
-    padding: 0;
-    // @include mobile {
-    //     max-width: 100%;
-    // }
-    
-}
 
-.hero__person--padding {
-    padding-top: 118px;
-    padding-bottom: 118px;
-    min-width: 480px;
+
+.hero__person--padding .container {
+   padding: 0;
+    @include mobile {
+            max-width: 100%;
+        }
+      
     
-    // max-width: 1600px;
-    // height: 600px;
+    }
+
+.hero__person--padding .container {
+    
+     height: 600px;
     margin-left: auto;
-    margin-right: auto;
-
+        margin-right: auto;
+        padding: 118px 60px;
+        
     & {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
@@ -26,25 +25,65 @@
         background-size: cover;
     }
 
+                  
+      @include table {
+       padding-top: 118px;
+       padding-right: 204px;
+       padding-bottom: 118px;
+       padding-left: 204px; 
+    }
+     @include desktop {
+    padding-top: 200px;
+        padding-right: 452px;
+        padding-bottom: 200px;
+        padding-left: 452px;
+      
+}
+@include table {
+    max-width: 780px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+@include desktop {
+    max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
 }
 
+.hero__text {
+    padding-top: 300px;
+    padding-bottom: 200px;
+
+         
+}
 
 .hero__title {
+    
+    max-width: 100%;
     font-weight: 900;
-    font-size: 26px;
-    line-height: 1.6;
-    // text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #ffff;
-    width: 360px;
-    margin-bottom: 30px;
-    // width: 696px;
-    margin-left: 60px;
-    margin-right: 60px;
-    // @include mobile {
-    //     min-width: 360px;
-    // }
+        font-size: 22px;
+        line-height: 1.61;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-left: auto;
+        margin-right: auto;
+     
+                @include mobile {
+                 max-width: 360px;   
+                }
+                @include table {
+                max-width: 360px;
+                                }
+                @include desktop {
+                    max-width: 460px;
+                }
+                 
+    
 }
 
 .hero__button {
@@ -57,14 +96,11 @@
     letter-spacing: 0.06em;
     background-color: var(--accent-color);
     color: #ffff;
-    // display: block;
-    
-    margin-left: 140px;
-    margin-right: 140px;
-    
+    display: block;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    width: 200px;
+    width: 216px;
     height: 50px;
     border: 0;
     border-radius: 4px;
