@@ -1,4 +1,5 @@
 .header {
+   
     background: var(--second-title-color);
     border-bottom: 1px solid #ececec;
      .header__container{
@@ -130,4 +131,93 @@
         border-radius: 2px;
         background-color: #2196f3;
     }
+}
+
+.menu-open {
+width: 40px;
+    height: 40px;
+   border: 0;
+    border-radius: 4px;
+}
+
+.menu-close {
+display: block;
+margin-left: auto;
+margin-bottom: 9px;
+}
+.mob-menu {
+position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color:aqua;
+    z-index: 2;
+padding-top: 21px;
+padding-bottom: 48px;
+
+
+}
+
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 32px;  
+}
+.mob-menu-link{
+font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+}
+
+
+.mob-contacts{
+    margin-top: 302px;
+    margin-bottom: 64px;
+}
+
+.mob-contacts-link {
+    font-weight: 500;
+        font-size: 34px;
+        line-height: 40px;
+       letter-spacing: 0.02em;
+       color: #2196F3;
+     
+}
+
+
+.mob-contacts-link2 {
+font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+
+    color: #757575;
+   
+}
+
+.mob-contacts-item {
+  margin-bottom: 32px; 
+}
+.mob-social {
+    display: flex;
+    gap: 20px;
+}
+.mob-social-item {
+   
+   border-right:  1px solid rgba(33, 33, 33, 0.2);
+   padding-right: 10px;
+    
+}
+.mob-social-link {
+    font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+    
+        color: #2196F3;
+
+        
 }
