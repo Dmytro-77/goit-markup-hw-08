@@ -1,6 +1,7 @@
 .porto__section {
     display: flex;
     background-color: var(--second-title-color);
+    max-width: 100%;
 }
 
     
@@ -69,9 +70,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    // padding-left: 15px;
-    // padding-right: 15px;
-
+    
+   
 @include mobile {
         padding-top: 30px;
         padding-bottom: 60px;
@@ -81,6 +81,7 @@
                 padding-top: 30px;
                 padding-bottom: 60px;
             }
+                        
                 @include desktop {
                     padding-top: 50px;
                      padding-bottom: 94px;
@@ -91,7 +92,7 @@
 
 
 .image {
-    min-width: 100%;
+    width: 100%;
     position: relative;
     overflow: hidden;
     
@@ -150,10 +151,7 @@
             padding: 20px 24px 20px 24px;
         }
     
-        @media screen and (min-width: 768px) {
-            padding: 20px 24px 54px 24px;
-        }
-    
+            
         @media screen and (min-width: 1200px) {
             padding: 20px 24px 20px 24px;
         }
