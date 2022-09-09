@@ -156,8 +156,16 @@ body {
   display: flex;
 }
 
-.navigation__list {
-  display: none;
+@media screen and (max-width: 1200px) {
+  .contacts {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation__list {
+    display: none;
+  }
 }
 
 .header__container {
@@ -185,6 +193,11 @@ body {
     letter-spacing: 0.03em;
   }
 }
+@media screen and (max-width: 1200px) {
+  .header__logo {
+    font-size: 24px;
+  }
+}
 
 .logo__nav {
   font-family: "Raleway";
@@ -193,6 +206,11 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--basic-blu-color);
+}
+@media screen and (max-width: 1200px) {
+  .logo__nav {
+    font-size: 24px;
+  }
 }
 
 .navigation__item:not(:last-child) {
@@ -218,18 +236,31 @@ body {
 .contacts:focus {
   color: var(--basic-blu-color);
 }
+@media screen and (max-width: 1200px) {
+  .navigation__link,
+.contacts {
+    font-size: 12px;
+  }
+}
 
 .navigation__link {
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-.contacts {
-  display: none;
+@media screen and (max-width: 768px) {
+  .contacts {
+    display: none;
+  }
 }
 
 .contacts__item {
   margin-left: 50px;
+}
+@media screen and (max-width: 1200px) {
+  .contacts__item {
+    padding-bottom: 10px;
+  }
 }
 
 .contacts__link {
@@ -243,6 +274,11 @@ body {
 }
 .contacts__link:hover, .contacts__link:focus {
   color: currentColor;
+}
+@media screen and (max-width: 1200px) {
+  .contacts__link {
+    font-size: 12px;
+  }
 }
 
 .contacts__icon {
@@ -277,19 +313,28 @@ body {
 
 .menu-open {
   margin-left: auto;
-  width: 40px;
-  height: 40px;
+  margin-right: 35px;
   border: 0;
-  border-radius: 4px;
+  background-color: white;
+}
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
 }
 
 .menu-close {
   display: block;
   margin-left: auto;
   margin-bottom: 9px;
+  background-color: #fff;
+  border: 0;
+}
+.menu-close:hover, .menu-close:focus {
+  fill: currentColor;
 }
 
-.menu .is-hidden {
+.menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -299,10 +344,8 @@ body {
   z-index: 2;
   padding-top: 48px;
   padding-bottom: 48px;
-  -webkit-transform: translate(0, 0) scale(0);
-          transform: translate(0, 0) scale(0);
 }
-.menu .is-hidden > .comtainer {
+.menu > .comtainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -315,6 +358,17 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: auto;
+}
+
+.menu.is-hidden {
+  -webkit-transform: translate(0, 0) scale(0);
+          transform: translate(0, 0) scale(0);
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .menu__item:not(:last-child) {
@@ -359,6 +413,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
+  padding-top: 64px;
 }
 
 .mob-soc__item {
@@ -465,7 +520,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .hero__title {
     max-width: 360px;
   }
