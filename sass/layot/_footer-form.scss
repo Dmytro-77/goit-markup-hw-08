@@ -1,21 +1,79 @@
 .footer__telegrams {
-    margin-left: 93px;
+    // margin-left: 93px;
+    margin-top: 60px;
+    
+        @media screen and (min-width: 1200px) {
+            margin-left: auto;
+            margin-top: 0;
+        }
 }
 
 .telegrams__form {
+    // display: flex;
     display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            flex-direction: column;
+            align-items: center;
+        }
 }
 
 .telegrams__input {
-    width: 358px;
-    height: 50px;
-    padding-left: 16px;
-    margin-right: 12px;
-    letter-spacing: 0.03em;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background-color: #2f303a;
-    border-radius: 4px;
-    border-radius: 4px;
+    // width: 358px;
+    // height: 50px;
+    // margin-left: 12px;
+    // letter-spacing: 0.03em;
+    // border: 1px solid rgba(255, 255, 255, 0.3);
+    // background-color: #2f303a;
+    // border-radius: 4px;
+    // border-radius: 4px;
+  
+    background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+    
+        @media screen and (min-width: 480px) {
+            width: 450px;
+        }
+    
+        width: 100%;
+        height: 50px;
+        cursor: pointer;
+        padding: 15px 0 15px 16px;
+        color: var(--primary-white-color);
+        transition: border-color 250ms rgba(255, 255, 255, 0.6);
+    
+        @media screen and (min-width: 1200px) {
+            width: 358px;
+        }
+    
+        &::placeholder {
+            @include font(16px, null, 1.25, 0.03em, null);
+            color: rgba(255, 255, 255, 0.6);
+            @include transition(color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+        }
+    
+        &:hover,
+        &:focus {
+            border-color: var(--accent-color);
+        }
+    
+        &:hover::placeholder,
+        &:focus::placeholder {
+            color: var(--accent-color);
+        }
+        @include mobile {
+            width: 450px;
+        }
+        @include table {
+            width: 450px;
+        }
+        @include desktop {
+            width: 358px;
+        }
 }
 
 .telegrams__button {
@@ -33,6 +91,7 @@
     border-radius: 4px;
     border: none;
     gap: 10px;
+    
 }
 
 .button__icon {
@@ -49,5 +108,16 @@
    
     align-items: center;
     justify-content: center;
+    @include mobile {
+        margin-left: 130px;
+        
+    }
+    @include table {
+        margin-left: 250px;
+    }
+   @include desktop {
+      margin-left: 0;
+   }
+    
     margin-bottom: 20px;
 }

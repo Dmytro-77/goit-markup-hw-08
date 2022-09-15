@@ -2,14 +2,25 @@
 
 
 .team {
+gap: 30px;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    justify-content: center;
     
-    
+    // display: block;
+        
+    //     @media screen and (min-width: 768px) {
+    //         gap: 30px;
+    //         display: flex;
+    //         flex-wrap: wrap;
+    //         justify-content: center;
+    //     }
+                
 }
 
+
 .team__item {
+    width: 100%;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -18,40 +29,74 @@
                     0px 4px 4px rgba(0, 0, 0, 0.06),
                     1px 4px 6px rgba(0, 0, 0, 0.16);
             }
-
-        @media screen and (min-width: 480px) {
+            @include mobile {
                 max-width: 450px;
             }
-        
-            @media screen and (min-width: 768px) {
-                max-width: 354px;
-            }
-        
-            @media screen and (max-width: 1200px) {
-                max-width: 270px;
-            }
-        @media screen and (min-width: 768px) {
-                width: calc((100% - 30px) / 2);
-            }
-        
-            @media screen and (min-width: 1200px) {
-                width: calc((100% - 90px) / 3);
-            }
-}
+             @include table {
+            width: 354px;
+                        }
+            @include mobile {
+            width: 270px;
+                                                }
+ @media screen and (max-width: 767px) {
+     &:not(:last-child) {
+         margin-bottom: 30px;
+
+     }
+
+     @media screen and (min-width: 768px) {
+         width: calc((100% - 30px) / 2);
+         margin-bottom: 0;
+     }
+
+     @media screen and (min-width: 1200px) {
+         width: calc((100% - 90px) / 4);
+     }
+
+ }
+           
+    
+       
+    }
+
 
 .team__box {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-radius: 4px;
-    background: #ffffff;
+padding-top: 30px;
+    padding-bottom: 24px;
+     text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
     @media screen and (min-width: 1200px) {
-            padding-top: 30px;
-            padding-bottom: 30px;
-        }
+        padding-bottom: 30px;
+    }
+}
+    // padding-top: 30px;
+    // padding-bottom: 30px;
+    // border-radius: 4px;
+    // background: #ffffff;
+    // @media screen and (min-width: 1200px) {
+    //         padding-top: 30px;
+    //         padding-bottom: 30px;
+    //     }
     
+
+
+.section__title-one {
+    align-items: center;
+        margin-bottom: 30px;
+        color: var(--primary-text-color);
+        @include font(28px, 700, 1.18, 0.03em, center);
+    
+        @media screen and (min-width: 1200px) {
+            @include font(36px, 700, 1.17, 0.03em, center);
+            margin-bottom: 50px;
+        }
 }
 
 .team__title {
+    
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -59,6 +104,7 @@
     letter-spacing: 0.03em;
     color: var(--first-title-color);
     margin-bottom: 30px;
+    
 }
 
 .team__title {
@@ -103,12 +149,14 @@
 .social {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 10px; 
 }
-
-/* --team-top-porto-- */
-
+   
 
 
-/*--TEAM-AREA--*/
+
+
+
+
+
 
