@@ -85,7 +85,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .visually__hidden {
@@ -117,21 +117,21 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 100%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 @media screen and (min-width: 768px) {
@@ -156,6 +156,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
 .navigation__list,
@@ -474,17 +477,18 @@ body {
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .hero .container {
-    max-width: 767px;
+    max-width: 768px;
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .hero .container {
     max-width: 1200px;
+    margin-bottom: 60px;
   }
 }
 
@@ -536,7 +540,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero__content {
-    max-width: 1600px;
+    max-width: 1200px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -701,13 +705,12 @@ body {
 /* --ICON-- */
 .feachers__box {
   height: 120px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #f5f4fa;
   border-radius: 4px;
-  margin-bottom: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -715,7 +718,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .feachers__box {
     width: 450px;
   }
@@ -744,7 +747,7 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-  .section__work {
+  .section__work > .container {
     display: none;
   }
 }
@@ -803,7 +806,7 @@ body {
 }
 
 .team__item {
-  width: 100%;
+  max-width: 100%;
   background-color: var(--primary-text-color);
   margin-bottom: 30px;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -817,10 +820,10 @@ body {
 }
 @media screen and (min-width: 480px) {
   .team__item {
-    max-width: 450px;
+    width: 450px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .team__item {
     width: 354px;
   }
@@ -958,6 +961,17 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .btn {
@@ -1618,6 +1632,7 @@ body {
   border-radius: 4px;
   border: none;
   gap: 10px;
+  margin-bottom: 30px;
 }
 
 .button__icon {

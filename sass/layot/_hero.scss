@@ -8,15 +8,16 @@ max-width: 100%;
     padding-right: 15px;
     margin-bottom: 60px;
   }
-@media screen and (min-width: 767px) {
-    max-width: 767px;
+@media screen and (min-width: 768px) {
+    max-width: 768px;
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 60px;
   }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (max-width: 1200px) {
     max-width: 1200px;
+    margin-bottom: 60px;
   }
 }
 .hero__content {
@@ -68,7 +69,7 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4),
   }
 
   @include desktop {
-    max-width: 1600px;
+    max-width: 1200px;
       height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;

@@ -6,6 +6,7 @@
     .header__container {
         display: flex;
         align-items: center;
+        justify-content: start;
     }
 }
 
@@ -32,11 +33,14 @@
 }
 
 .header__container {
-    width: 100%;
+    
+        width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+   
+    
     // @include table {
     //     padding-left: 40px;
     //     padding-right: 40px;
@@ -62,7 +66,7 @@
                     font-size: 24px;
         
                 }
-       
+          
 }
 
 
@@ -111,9 +115,12 @@
 .navigation__link {
     padding-top: 32px;
     padding-bottom: 32px;
+    
+   
 }
 
 .contacts {
+    
     @media screen and (max-width: 768px) {
             display: none;
                   }
@@ -301,13 +308,15 @@
     margin-bottom: 32px;
 }
 
+    
 .mob-soc {
     display: flex;
     gap: 20px;
     padding-top: 64px;
     flex-wrap: wrap;
-        
 }
+        
+
 
 .mob-soc__item {
 
