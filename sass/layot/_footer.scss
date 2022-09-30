@@ -41,12 +41,13 @@
 }
 
 .logo {
-    @include mobile {
-    text-align: center;
-    }
-    @include table {
-        text-align: center;
-}
+    @media screen and (max-width: 480px) {
+            text-align: center;
+        }
+    
+        @media screen and (max-width: 768px) {
+            text-align: center;
+        }
     }
     
 
@@ -78,6 +79,13 @@
     letter-spacing: 0.03em;
     color: var(--second-title-color);
    margin-top: 20px;
+@media screen and (max-width: 480px) {
+        text-align: center;
+    }
+
+     @media screen and (max-width: 768px) {
+        text-align: center;
+    }
 }
 
 

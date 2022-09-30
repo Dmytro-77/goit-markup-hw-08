@@ -2,18 +2,20 @@
 
 padding: 0;
 max-width: 100%;
-@include mobile {
-    max-width: 470px;
+@media screen and (max-width: 480px) {
+    min-width: 470px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-bottom: 60px;
   }
-@include table {
+@media screen and (min-width: 767px) {
     max-width: 767px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-bottom: 60px;
   }
 
-  @include desktop {
+    @media screen and (min-width: 1200px) {
     max-width: 1200px;
   }
 }
@@ -22,54 +24,64 @@ padding-top: 118px;
   
   padding-bottom: 118px;
   
-
-  max-width: 100%;
-  height: auto;
+@media screen and (min-width: 320px) {
+  max-width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
+
+  
 
 
   background-image: linear-gradient(rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
-    url(../../img2/hero-bg-mobail.jpg);
+    url(../img2/hero-bg-mobail.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   @include retina {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)),
-        url(../../img2/hero-bg-mob-2x.jpg);
+        url(../img2/hero-bg-mob-2x.jpg);
     }
-
+}
   @include table {
+    width: 768px;
+      height: 400px;
+      margin-left: auto;
+        margin-right: auto;
+      margin-left: auto;
+      margin-right: auto;
     padding-top: 118px;
     padding-bottom: 188px;
 background-image: linear-gradient(rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
-    url(../../img2/hero-bg-table.jpg);
+    url(../img2/hero-bg-table.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   @include retina {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)),
-        url(../../img2/hero-bg-tab-2x.jpg);
+        url(../img2/hero-bg-tab-2x.jpg);
     }
   }
 
   @include desktop {
+    max-width: 1600px;
+      height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)),
-        url(../../img2/Hero\ foto.jpg);
+        url(../img2/Hero\ foto.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
       @include retina {
           background-image: linear-gradient(rgba(47, 48, 58, 0.4),
               rgba(47, 48, 58, 0.4)),
-            url(../../img2/hero-bg-des-2x.jpg);
+            url(../img2/hero-bg-des-2x.jpg);
         }
   }
 }

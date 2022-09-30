@@ -13,7 +13,7 @@
 .navigation__link,
 .contacts {
     display: flex;
-   
+
 }
 
 .contacts {
@@ -122,7 +122,8 @@
                 }
     }
 .contacts__item {
-    margin-left: 50px;
+    // margin-left: 50px;
+    margin-bottom: 10px;
     @media screen and (max-width: 1200px) {
     padding-bottom: 10px;
                       }
@@ -236,14 +237,12 @@
     padding-top: 48px;
     padding-bottom: 48px;
     >.comtainer {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        justify-content: space-between;
-        overflow: auto;
-    }
-
-        
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: space-between;
+            overflow: auto;
+        }
 }
   
 .menu.is-hidden {
@@ -270,9 +269,12 @@
 
     color: #212121;
 }
+.menu__link2 {
+    color: #2196F3;
+}
 
 .menu-connect {
-    margin-top: 302px;
+    margin-top: auto;
     margin-bottom: 64px;
 }
 
@@ -303,10 +305,8 @@
     display: flex;
     gap: 20px;
     padding-top: 64px;
-    
-   
-    
-    
+    flex-wrap: wrap;
+        
 }
 
 .mob-soc__item {
