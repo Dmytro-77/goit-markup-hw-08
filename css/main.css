@@ -124,7 +124,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -159,6 +158,10 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .navigation__list,
@@ -465,33 +468,18 @@ body {
   color: #2196F3;
 }
 
-.hero .container {
-  padding: 0;
-  max-width: 100%;
-}
 @media screen and (max-width: 480px) {
   .hero .container {
-    min-width: 470px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 768px) {
   .hero .container {
-    max-width: 768px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-bottom: 60px;
   }
 }
-@media screen and (max-width: 1200px) {
-  .hero .container {
-    max-width: 1200px;
-    margin-bottom: 60px;
-  }
-}
-
 .hero__content {
   padding-top: 118px;
   padding-bottom: 118px;
@@ -517,10 +505,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero__content {
-    width: 768px;
+    max-width: 768px;
     height: 400px;
-    margin-left: auto;
-    margin-right: auto;
     margin-left: auto;
     margin-right: auto;
     padding-top: 118px;
@@ -540,7 +526,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero__content {
-    max-width: 1200px;
+    max-width: 100%;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -567,18 +553,16 @@ body {
   text-transform: uppercase;
   margin-bottom: 30px;
   color: #FFFFFF;
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .hero__title {
-    max-width: 360px;
+    font-size: 26px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -720,7 +704,7 @@ body {
 }
 @media screen and (max-width: 480px) {
   .feachers__box {
-    width: 450px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -746,7 +730,7 @@ body {
   margin-top: 50px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .section__work > .container {
     display: none;
   }
@@ -806,9 +790,7 @@ body {
 }
 
 .team__item {
-  max-width: 100%;
-  background-color: var(--primary-text-color);
-  margin-bottom: 30px;
+  background-color: white;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -818,33 +800,13 @@ body {
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
-@media screen and (min-width: 480px) {
-  .team__item {
-    width: 450px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .team__item {
-    width: 354px;
-  }
-}
-@media screen and (min-width: 480px) {
-  .team__item {
-    width: 270px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .team__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-@media screen and (max-width: 767px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .team__item {
     width: calc((100% - 30px) / 2);
     margin-bottom: 0;
   }
 }
-@media screen and (max-width: 767px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .team__item {
     width: calc((100% - 90px) / 4);
   }
@@ -1295,6 +1257,10 @@ body {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -1504,6 +1470,14 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .telegrams__form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 

@@ -28,7 +28,7 @@
 
     @media screen and (min-width: 1200px) {
         @include flex(flex, baseline, null);
-        // flex-wrap: wrap;
+        flex-direction: row;
     }
 }
 

@@ -1,23 +1,23 @@
 .hero .container {
 
-padding: 0;
-max-width: 100%;
+// padding: 0;
+// max-width: 100%;
 @media screen and (max-width: 480px) {
-    min-width: 470px;
+    // min-width: 470px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
   }
 @media screen and (min-width: 768px) {
-    max-width: 768px;
+    // max-width: 768px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
   }
 
     @media screen and (max-width: 1200px) {
-    max-width: 1200px;
-    margin-bottom: 60px;
+    // max-width: 1200px;
+    // margin-bottom: 60px;
   }
 }
 .hero__content {
@@ -47,12 +47,11 @@ padding-top: 118px;
     }
 }
   @include table {
-    width: 768px;
+    max-width: 768px;
       height: 400px;
       margin-left: auto;
         margin-right: auto;
-      margin-left: auto;
-      margin-right: auto;
+     
     padding-top: 118px;
     padding-bottom: 188px;
 background-image: linear-gradient(rgba(47, 48, 58, 0.4),
@@ -69,7 +68,7 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4),
   }
 
   @include desktop {
-    max-width: 1200px;
+    max-width: 100%;
       height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -100,16 +99,17 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4),
     text-transform: uppercase;
   margin-bottom: 30px;
     color: #FFFFFF;
-  width: 100%;
+  // width: 300px;
   
   margin-left: auto;
   margin-right: auto;
  @include table {
-  max-width: 360px;
+  // max-width: 360px;
+font-size: 26px;
  }
  
 @media screen and (min-width: 1200px) {
-  max-width: 696px;
+  // max-width: 696px;
   font-size: 44px;
   line-height: 1.36;
 }

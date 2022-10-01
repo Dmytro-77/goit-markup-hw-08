@@ -5,6 +5,8 @@
         @media screen and (min-width: 1200px) {
             margin-left: auto;
             margin-top: 0;
+            
+            
         }
 }
 
@@ -20,6 +22,10 @@
             align-items: center;
             
         }
+                @media screen and (min-width: 1199px) {
+                flex-direction: row;
+               
+                }
 }
 
 .telegrams__input {
