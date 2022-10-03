@@ -9,15 +9,17 @@
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    display: flex;
-    flex-direction: column;
     
-        justify-content: space-between;
-    height: 100%;
     
     // align-items: baseline;
 }
-    
+ .contr {
+display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    height: 100%;
+ }
 
 .btn {
    

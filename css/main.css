@@ -932,6 +932,9 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.contr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
