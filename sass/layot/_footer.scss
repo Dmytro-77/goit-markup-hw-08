@@ -41,13 +41,16 @@
 }
 
 .logo {
-    @media screen and (max-width: 480px) {
+    @media screen and (min-width: 480px) {
             text-align: center;
         }
     
-        @media screen and (max-width: 768px) {
+        @media screen and (min-width: 768px) {
             text-align: center;
         }
+                @media screen and (min-width: 1199px) {
+                    text-align: start;
+                }
     }
     
 
@@ -58,6 +61,7 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--second-title-color);
+    
     
 }
 .logo__span {

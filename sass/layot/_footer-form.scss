@@ -25,6 +25,7 @@
                 @media screen and (min-width: 1199px) {
                 flex-direction: row;
                
+               
                 }
 }
 
@@ -114,8 +115,8 @@
     text-transform: uppercase;
     color: #ffffff;
    
-    align-items: center;
-    justify-content: center;
+    // align-items: center;
+    // justify-content: center;
     @include mobile {
         margin-left: 130px;
         
@@ -123,9 +124,13 @@
     @include table {
         margin-left: 250px;
     }
-   @include desktop {
-      margin-left: 0;
-   }
-    
+   @media screen and (max-width: 1199px) {
+      margin-left: 0px;
+      text-align: center;
+      margin-bottom: 20px;
+}
+@media screen and (min-width: 1199px) {
     margin-bottom: 20px;
+    margin-left: 0px;
+}
 }

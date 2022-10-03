@@ -8,13 +8,17 @@
    
 }
 
-.section__work>.container {
-    @media screen and (max-width: 1199px) {
-            display: none;
-}
-}
+// .section__work>.container {
+//     @media screen and (max-width: 1199px) {
+//             display: none;
+// }
+// }
 
-           
+ .section__work {
+@media screen and (max-width: 1199px) {
+        display: none;
+    }
+ }
        
 
 

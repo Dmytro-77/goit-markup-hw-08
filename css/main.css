@@ -117,16 +117,6 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -264,7 +254,7 @@ body {
   padding-bottom: 32px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .contacts {
     display: none;
   }
@@ -276,11 +266,17 @@ body {
 }
 
 .contacts__item {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 @media screen and (max-width: 1200px) {
   .contacts__item {
     padding-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .contacts__item2 {
+    margin-left: 31px;
   }
 }
 
@@ -469,17 +465,21 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-  .hero .container {
-    padding-left: 15px;
-    padding-right: 15px;
+  .hero.container {
+    max-width: 470px;
   }
 }
-@media screen and (min-width: 768px) {
-  .hero .container {
-    padding-left: 15px;
-    padding-right: 15px;
+@media screen and (min-width: 767px) {
+  .hero.container {
+    max-width: 768px;
   }
 }
+@media screen and (max-width: 1200px) {
+  .hero.container {
+    max-width: 1200px;
+  }
+}
+
 .hero__content {
   padding-top: 118px;
   padding-bottom: 118px;
@@ -503,9 +503,9 @@ body {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img2/hero-bg-mob-2x.jpg);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .hero__content {
-    max-width: 768px;
+    max-width: 767px;
     height: 400px;
     margin-left: auto;
     margin-right: auto;
@@ -518,15 +518,15 @@ body {
     background-size: cover;
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (min-resolution: 2dppx) {
   .hero__content {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img2/hero-bg-tab-2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img2/hero-bg-tab-2x.jpg);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .hero__content {
-    max-width: 100%;
+    max-width: 1200px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -537,7 +537,7 @@ body {
     background-size: cover;
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 1199px) and (min-resolution: 2dppx) {
   .hero__content {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img2/hero-bg-des-2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img2/hero-bg-des-2x.jpg);
@@ -558,11 +558,13 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero__title {
+    max-width: 360px;
     font-size: 26px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -665,9 +667,15 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .feachers__item {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .feachers-item:not(:last-child) {
-    margin-bottom: 0;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -675,7 +683,7 @@ body {
     width: 450px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .feachers-item {
     width: calc((100% - 30px) / 2);
   }
@@ -731,7 +739,7 @@ body {
 }
 
 @media screen and (max-width: 1199px) {
-  .section__work > .container {
+  .section__work {
     display: none;
   }
 }
@@ -787,6 +795,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 100%;
 }
 
 .team__item {
@@ -800,7 +809,7 @@ body {
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .team__item {
     width: calc((100% - 30px) / 2);
     margin-bottom: 0;
@@ -930,10 +939,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 100%;
 }
 
 .btn {
@@ -1228,6 +1237,10 @@ body {
   }
 }
 
+.section__title {
+  margin-bottom: 30px;
+}
+
 .footer__padding {
   max-width: 100%;
   padding: 60px 0;
@@ -1277,14 +1290,19 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .logo {
     text-align: center;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .logo {
     text-align: center;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .logo {
+    text-align: start;
   }
 }
 
@@ -1620,13 +1638,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 20px;
 }
 @media screen and (min-width: 480px) {
   .telegrams__title {
@@ -1638,9 +1649,17 @@ body {
     margin-left: 250px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .telegrams__title {
-    margin-left: 0;
+    margin-left: 0px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .telegrams__title {
+    margin-bottom: 20px;
+    margin-left: 0px;
   }
 }
 

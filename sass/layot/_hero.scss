@@ -1,22 +1,22 @@
-.hero .container {
+.hero.container {
 
 // padding: 0;
 // max-width: 100%;
 @media screen and (max-width: 480px) {
-    // min-width: 470px;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: 470px;
+    // padding-left: 15px;
+    // padding-right: 15px;
     // margin-bottom: 60px;
   }
-@media screen and (min-width: 768px) {
-    // max-width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
+@media screen and (min-width: 767px) {
+    max-width: 768px;
+    // padding-left: 15px;
+    // padding-right: 15px;
     // margin-bottom: 60px;
   }
 
     @media screen and (max-width: 1200px) {
-    // max-width: 1200px;
+    max-width: 1200px;
     // margin-bottom: 60px;
   }
 }
@@ -46,8 +46,8 @@ padding-top: 118px;
         url(../img2/hero-bg-mob-2x.jpg);
     }
 }
-  @include table {
-    max-width: 768px;
+    @media screen and (min-width: 767px) {
+    max-width: 767px;
       height: 400px;
       margin-left: auto;
         margin-right: auto;
@@ -67,8 +67,8 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4),
     }
   }
 
-  @include desktop {
-    max-width: 100%;
+    @media screen and (min-width: 1199px){
+   max-width: 1200px;
       height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -104,12 +104,12 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4),
   margin-left: auto;
   margin-right: auto;
  @include table {
-  // max-width: 360px;
+  max-width: 360px;
 font-size: 26px;
  }
  
 @media screen and (min-width: 1200px) {
-  // max-width: 696px;
+  max-width: 696px;
   font-size: 44px;
   line-height: 1.36;
 }
