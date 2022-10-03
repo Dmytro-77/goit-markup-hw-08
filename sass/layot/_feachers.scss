@@ -1,7 +1,7 @@
 
-.feachers {
+// .feachers {
 
-}
+// }
 .feachers__title {
        
        font-weight: 700;
@@ -88,7 +88,8 @@
     
     //     @media screen and (min-width: 1200px) {
     //         width: calc((100% - 3 * 30px) / 4);
-    //     }
+    //     } 
+    
 
     @media screen and (max-width: 767px) {
             &:not(:last-child) {
@@ -99,7 +100,7 @@
             width: 450px;
            
         }
-        
+     
     
 @media screen and (min-width: 767px) {
         width: calc((100% - 30px) / 2);
